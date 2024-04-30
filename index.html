@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_coding__hub_</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(59, 53, 53);
+        color: white;
+    }
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 4vw;
+        overflow: hidden;
+    }
+    .char{
+        transform: translateY(150px);
+    }
+</style>
+<body>
+    <h1 id="coding-hub">coding hub</h1>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        const myText = new  SplitType("#coding-hub")
+
+        gsap.to('.char', {
+            y:0,
+            delay:0.5,
+            stagger:0.05,
+            duration:1,
+            ease:"power2",
+        })
+    </script>
+</body>
+</html>
